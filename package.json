@@ -1,0 +1,32 @@
+{
+  "name": "are_you_basic_blockchain",
+  "version": "1.0.0",
+  "description": "A secure Solidity smart contract for handling player bets with BEP-20 USDT tokens.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx hardhat clean",
+    "compile": "npx hardhat compile",
+    "node": "npx hardhat node",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "set-question": "npx hardhat run scripts/set_question.js --network localhost",
+    "start-game": "npx hardhat run scripts/start-game.js --network localhost",
+    "place-bet": "npx hardhat run scripts/place-bet.js --network localhost",
+    "submit-answer": "npx hardhat run scripts/submit-answer.js --network localhost",
+    "resolve-game": "npx hardhat run scripts/resolve-game.js --network localhost",
+    "mint-usdt": "npx hardhat run scripts/mint-usdt.js --network localhost",
+    "check-balances": "npx hardhat run scripts/check-token-balances.js --network localhost",
+    "simple-mint": "npx hardhat run scripts/simple-mint.js --network localhost",
+    "test": "npx hardhat test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.23.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.4.5"
+  }
+}
